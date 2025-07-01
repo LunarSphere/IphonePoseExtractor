@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3761A5CB2E1B03B1008D5FC5 /* TransformsExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3761A5CA2E1B03B1008D5FC5 /* TransformsExport.swift */; };
 		376A7CDE2E0DDC5D002EE7D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376A7CDD2E0DDC5D002EE7D0 /* AppDelegate.swift */; };
 		376A7CE02E0DDC5D002EE7D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376A7CDF2E0DDC5D002EE7D0 /* ContentView.swift */; };
 		376A7CE22E0DDC5F002EE7D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376A7CE12E0DDC5F002EE7D0 /* Assets.xcassets */; };
 		376A7CE52E0DDC5F002EE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 376A7CE42E0DDC5F002EE7D0 /* Preview Assets.xcassets */; };
 		378E578A2E12DA1E00F0B946 /* PoseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E57892E12DA1E00F0B946 /* PoseModel.swift */; };
 		378E578C2E12DA6D00F0B946 /* ARViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E578B2E12DA6D00F0B946 /* ARViewModel.swift */; };
+		378E578F2E138BCA00F0B946 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 378E578E2E138BCA00F0B946 /* Zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3761A5CA2E1B03B1008D5FC5 /* TransformsExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformsExport.swift; sourceTree = "<group>"; };
 		376A7CDA2E0DDC5D002EE7D0 /* IphonePoseExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IphonePoseExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		376A7CDD2E0DDC5D002EE7D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		376A7CDF2E0DDC5D002EE7D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378E578F2E138BCA00F0B946 /* Zip in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				376A7CDF2E0DDC5D002EE7D0 /* ContentView.swift */,
 				376A7CE12E0DDC5F002EE7D0 /* Assets.xcassets */,
 				376A7CE32E0DDC5F002EE7D0 /* Preview Content */,
+				3761A5CA2E1B03B1008D5FC5 /* TransformsExport.swift */,
 			);
 			path = IphonePoseExtractor;
 			sourceTree = "<group>";
@@ -89,6 +94,9 @@
 			dependencies = (
 			);
 			name = IphonePoseExtractor;
+			packageProductDependencies = (
+				378E578E2E138BCA00F0B946 /* Zip */,
+			);
 			productName = IphonePoseExtractor;
 			productReference = 376A7CDA2E0DDC5D002EE7D0 /* IphonePoseExtractor.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 376A7CD12E0DDC5D002EE7D0;
+			packageReferences = (
+				378E578D2E138BC900F0B946 /* XCRemoteSwiftPackageReference "Zip" */,
+			);
 			productRefGroup = 376A7CDB2E0DDC5D002EE7D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +160,7 @@
 				376A7CE02E0DDC5D002EE7D0 /* ContentView.swift in Sources */,
 				376A7CDE2E0DDC5D002EE7D0 /* AppDelegate.swift in Sources */,
 				378E578A2E12DA1E00F0B946 /* PoseModel.swift in Sources */,
+				3761A5CB2E1B03B1008D5FC5 /* TransformsExport.swift in Sources */,
 				378E578C2E12DA6D00F0B946 /* ARViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +298,8 @@
 				DEVELOPMENT_TEAM = TQ52SUP54S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,11 +307,14 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = KTribble.IphonePoseExtractor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -317,6 +334,8 @@
 				DEVELOPMENT_TEAM = TQ52SUP54S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,11 +343,14 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_PREPROCESS = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
+				NEW_SETTING1 = "";
 				PRODUCT_BUNDLE_IDENTIFIER = KTribble.IphonePoseExtractor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -359,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		378E578D2E138BC900F0B946 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		378E578E2E138BCA00F0B946 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 378E578D2E138BC900F0B946 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 376A7CD22E0DDC5D002EE7D0 /* Project object */;
 }
